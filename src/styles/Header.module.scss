@@ -1,0 +1,59 @@
+@import "vendor/_defaults";
+
+.header {
+  height: rem(80);
+  background-color: var(--color-farcry-black);
+  width: 100vw;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  position: relative;
+
+  &::before {
+    content: "";
+    background: url(../../public/images/black-border-top.png) repeat-x;
+    position: absolute;
+    display: block;
+    height: rem(13);
+    top: 100%;
+    left: 0;
+    width: 100vw;
+  }
+
+  .logo {
+    align-self: flex-start;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    padding: rem(10) rem(10) rem(10) 0;
+  }
+
+  .buy {
+    height: 100%;
+    background-color: var(--color-farcry-yellow);
+    width: rem(200);
+    align-self: flex-end;
+    mask: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAB4AAAAETBAMAAAAlrgYiAAAAD1BMVEUAAAAAAAAAAAAAAAAAAABPDueNAAAABHRSTlMB1DaI69AGdAAAA4tJREFUeNrt3eFtwjAUhdHEeIQMQBMvUDUjdP+ZGAD+WIg6tz5nhCd9eg4EvCzL+gtkWgQMAgYEDHQFXIqAITbg2/FtCpAa8LF8mQKkBrzvjtAgYGBAwD6FBgEDAgYEDAIGrh5wETDkBrx4kQOCA9Yv5AZ8MwPIDbiaAeQG3MwABAwMCXgzBUgN+DQDsIGBIRtYwOAIDQgYEDAIGBAwIGDgKeDNDEDAgCM0YAODgAEBA56BAQGDgIFrBNzMAGxgwAYGBAyTBOxqJAgO2N1IYAMDnoEBAcMsAVczABsYEDAgYBAwcPWAqxmAgAEBAz0Br2YAAgYEDAgYBAxcPWA/6AcBAyMCLmYAAgYGBLyYAQQHvBkCCBgYEPDPaQoQG7BXOUDAgICBroCLy1UgN+B7MwWIDXi3gSE34EPAEHyE9iEWCBgYELCvkUDAgIABAYOAAQEDAgYEDAIGBAwIGCYOuAgYbGBAwICAQcCAgAEBAwIGAQMCBt4M2NUqIGDAERro28ACBhsYsIEBGxgEDAgYEDDwIuBqCiBgYEDAzRRAwICAAQGDgAEBAx8LuJoC5AbsTSwIDthf6oCAAQEDXQGfpgACBgQMCBgmCXgzBRAwIGBAwDBJwKcpgICBvw+4CBiCA/YMDAIGRgRsCCBgwBEa6AnY10iQHLANDI7QwIiADQEEDAgYEDAIGLh8wJspgIABR2hAwCBg4OIBexcakgN2vSgEB7yaAuQGfJoC5AbcTAEcoQEBAwIGAQMCBgQMCBgEDFwi4CJgsIEBAQNdR2g/JwQBA47QgIBBwICAAQEDAgYBAwIGBAzzBuzXSGADAwIGBAwCBgQMCBgQMAgYEDAgYBAwkBjwXcAgYGBAwIf/hYbcgHcBQ3DAzRQgNmBXq0BwwL5GguSAqymADQwIGBAwCBgQMCBg4ClgNzOADQwIGBAwCBgQMCBgQMAgYEDAwLsB+0sdEDDgCA30BWwDgw0MjHgGFjDYwICAAQGDgAEBAwIGBAz/K+BmCiBgYEDA3oUGAQMjAt5MAWIDLoYAAgYEDHQF7BkYBAw4QgMCBgEDAgYEDLwIeDMFiA3Yu9CQHPBpCuAIDQwI2BBAwIAjNCBgmCRgn0KDgAEBA56BYZoNLGAQMOAZGBAwCBgQMCBg4EXArhcFAQMCBroCXk0BcgOupgC5ATdTAAEDAgYEDAIGBAx8LOBqCpAbsBc5INUDKDBWxxz+yt0AAAAASUVORK5CYII=);
+    font-family: "TitlingGothicFB Comp", sans-serif;
+    text-transform: uppercase;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-size: rem(20);
+    cursor: pointer;
+
+    a {
+      color: var(--color-farcry-black);
+      text-decoration: none;
+    }
+
+    span:first-child {
+      font-weight: 500;
+    }
+
+    span:last-child {
+      font-weight: 400;
+    }
+  }
+}

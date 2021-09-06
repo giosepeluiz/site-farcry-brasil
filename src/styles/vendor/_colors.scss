@@ -1,0 +1,16 @@
+// ==========================================================================
+// Color Scheme 1 Name
+// ==========================================================================
+
+$color-farcry: (
+  "farcry-yellow": #f9a62a,
+  "farcry-red": #ed0000,
+  "farcry-black": #1c1c1c,
+  "farcry-white": #e8e3ce,
+);
+
+:root {
+  @each $name, $color in $color-farcry {
+    --color-#{$name}: #{$color};
+  }
+}

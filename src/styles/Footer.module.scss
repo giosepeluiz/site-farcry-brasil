@@ -1,0 +1,33 @@
+@import "vendor/_defaults";
+
+.footer {
+  height: rem(70);
+  background-color: var(--color-farcry-black);
+  width: 100vw;
+  display: flex;
+  color: var(--color-farcry-white);
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  position: relative;
+
+  &::before {
+    content: "";
+    background: url(../../public/images/black-border-bottom.png) repeat-x;
+    position: absolute;
+    display: block;
+    height: 13px;
+    bottom: 100%;
+    left: 0;
+    width: 100%;
+  }
+
+  a {
+    color: var(--color-farcry-white);
+    text-decoration: none;
+  }
+
+  a strong {
+    margin-left: rem(5);
+  }
+}
