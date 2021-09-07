@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import styles from "../styles/Countdown.module.scss";
+import CommunityTitle from "./CommunityTitle";
 
 // Acrescenta um ZERO à ESQUERDA
 const padLeft = (value) => {
@@ -23,7 +24,7 @@ const Countdown = (props) => {
 
   useEffect(() => {
     // Define a data final
-    const countDownDate = new Date(`${endMonth}/${endDay}/${endYear} 00:00:00`).getTime();
+    const countDownDate = new Date(`${endMonth}/${endDay}/${endYear} 13:52:00`).getTime();
     countDownDate.toLocaleString("pt-BR", { timeZone: "America/Sao_Paulo" });
 
     // Atualiza o contador a cada um segundo
@@ -47,7 +48,7 @@ const Countdown = (props) => {
       // Se o contador acabar, encerra o contador
       if (distance < 0) {
         clearInterval(x);
-        // console.log("Encerrado")
+        setTime(null);
       }
     }, 1000);
   });
@@ -55,24 +56,33 @@ const Countdown = (props) => {
     <div className={styles.countdown}>
       {time && (
         <>
-          <div className={styles.counter}>
-            <div className={styles.time}>{time.days}</div>
-            <div className={styles.info}>{isPlural(time.days) ? "dias" : "dia"}</div>
-          </div>
-          <div className={styles.counter}>
-            <div className={styles.time}>{time.hours}</div>
-            <div className={styles.info}>{isPlural(time.hours) ? "horas" : "hora"}</div>
-          </div>
-          <div className={styles.counter}>
-            <div className={styles.time}>{time.minutes}</div>
-            <div className={styles.info}>{isPlural(time.minutes) ? "minutos" : "minuto"}</div>
-          </div>
-          <div className={styles.counter}>
-            <div className={styles.time}>{time.seconds}</div>
-            <div className={styles.info}>{isPlural(time.seconds) ? "segundos" : "segundo"}</div>
-          </div>
+          {time.days && (
+            <div className={styles.counter}>
+              <div className={styles.time}>{time.days}</div>
+              <div className={styles.info}>{isPlural(time.days) ? "dias" : "dia"}</div>
+            </div>
+          )}
+          {time.hours && (
+            <div className={styles.counter}>
+              <div className={styles.time}>{time.hours}</div>
+              <div className={styles.info}>{isPlural(time.hours) ? "horas" : "hora"}</div>
+            </div>
+          )}
+          {time.minutes && (
+            <div className={styles.counter}>
+              <div className={styles.time}>{time.minutes}</div>
+              <div className={styles.info}>{isPlural(time.minutes) ? "minutos" : "minuto"}</div>
+            </div>
+          )}
+          {time.seconds && (
+            <div className={styles.counter}>
+              <div className={styles.time}>{time.seconds}</div>
+              <div className={styles.info}>{isPlural(time.seconds) ? "segundos" : "segundo"}</div>
+            </div>
+          )}
         </>
       )}
+      {!time && <CommunityTitle title="Comunidade" subtitle="Oficial" />};
     </div>
   );
 };

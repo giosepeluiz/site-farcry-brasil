@@ -46,7 +46,7 @@ export default function Home() {
         <div className={styles.logo}>
           <Image src={fcLogo} height="90" width="371" alt="Logo Far Cry 6" />
         </div>
-        <Countdown endDay={7} endMonth={10} endYear={2021} />
+        <Countdown endDay={7} endMonth={9} endYear={2021} />
       </main>
 
       <Footer />

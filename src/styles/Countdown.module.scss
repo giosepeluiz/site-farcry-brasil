@@ -11,9 +11,9 @@
   }
 
   .time {
-    font-size: rem(150);
+    font-size: $global-title-size;
     color: var(--color-farcry-white);
-    font-family: "TitlingGothicFB Comp", sans-serif;
+    font-family: $global-font-title;
     font-weight: bold;
     width: rem(200);
     text-align: center;
@@ -21,7 +21,7 @@
 
   .info {
     color: var(--color-farcry-yellow);
-    font-family: "TitlingGothicFB Comp", sans-serif;
+    font-family: $global-font-title;
     font-weight: 400;
     text-transform: uppercase;
     font-size: rem(50);
