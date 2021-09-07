@@ -23,3 +23,15 @@
   flex-direction: column;
 
 }
+
+.logo {
+  height: rem(90);
+  width: rem(371);
+  margin-bottom: rem(40);
+}
+
+@include breakpoint("small-only") {
+  .logo {
+    zoom: 0.7;
+  }
+}
