@@ -17,12 +17,13 @@ const isPlural = (value) => {
   return true;
 };
 
-const Countdown = () => {
+const Countdown = (props) => {
   const [time, setTime] = useState(null);
+  const { endDay, endMonth, endYear } = props;
 
   useEffect(() => {
     // Define a data final
-    const countDownDate = new Date("Oct 7, 2021 00:00:00").getTime();
+    const countDownDate = new Date(`${endMonth}/${endDay}/${endYear} 00:00:00`).getTime();
     countDownDate.toLocaleString("pt-BR", { timeZone: "America/Sao_Paulo" });
 
     // Atualiza o contador a cada um segundo
