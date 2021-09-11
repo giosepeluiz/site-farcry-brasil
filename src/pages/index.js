@@ -12,23 +12,23 @@ export default function Home() {
     <div className={styles.container}>
       {/* SEO com personalização - Documentação: https://www.npmjs.com/package/next-seo */}
       <NextSeo
-        title="Comunidade Oficial de Far Cry - Contagem Regressiva"
-        description="Comunidade Oficial de Far Cry - Contagem Regressiva"
+        title="Comunidade Oficial de Far Cry | Contagem Regressiva"
+        description="Comunidade Oficial de Far Cry | Contagem Regressiva"
         openGraph={{
           type: "website",
           url: "https://farcry.arqueirover.de",
-          title: "Comunidade Oficial de Far Cry - Contagem Regressiva",
-          description: "Comunidade Oficial de Far Cry - Contagem Regressiva",
+          title: "Comunidade Oficial de Far Cry | Contagem Regressiva",
+          description: "Comunidade Oficial de Far Cry | Contagem Regressiva",
           images: [
             {
               url: ".",
               width: 800,
-              height: 600,
-              alt: "Comunidade Oficial de Far Cry - Contagem Regressiva",
+              height: 420,
+              alt: "Comunidade Oficial de Far Cry | Contagem Regressiva",
             },
             { url: "images/og-banner.jpg" },
           ],
-          site_name: "SiteName",
+          site_name: "Comunidade Oficial de Far Cry",
         }}
         additionalLinkTags={[
           {

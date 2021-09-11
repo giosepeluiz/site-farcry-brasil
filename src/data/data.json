@@ -1,0 +1,430 @@
+[
+  {
+    "id": "fc2",
+    "game": "Far Cry 2",
+    "songs": [
+      {
+        "name": "Trilha Sonora Original",
+        "options": [
+          {
+            "type": "Youtube",
+            "url": "https://bit.ly/1vjaPQv"
+          },
+          {
+            "type": "Spotify",
+            "url": "https://spoti.fi/2JT2XPh"
+          },
+          {
+            "type": "Deezer",
+            "url": "https://bit.ly/2Hqd8MN"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "fc3",
+    "game": "Far Cry 3",
+    "songs": [
+      {
+        "name": "Trilha Sonora Original",
+        "options": [
+          {
+            "type": "Youtube",
+            "url": "https://bit.ly/1FtNRJU"
+          },
+          {
+            "type": "Spotify",
+            "url": "https://spoti.fi/2HGowl9"
+          },
+          {
+            "type": "Deezer",
+            "url": "https://bit.ly/2qF5EuT"
+          }
+        ]
+      },
+      {
+        "name": "Músicas de Rádio",
+        "options": [
+          {
+            "type": "Youtube",
+            "url": "https://rebrand.ly/rf857e"
+          },
+          {
+            "type": "Spotify",
+            "url": "https://rebrand.ly/ze4"
+          }
+        ]
+      },
+      {
+        "name": "Música - 'Make it Bun Dem'",
+        "options": [
+          {
+            "type": "Youtube",
+            "url": "https://youtu.be/BGpzGu9Yp6Y"
+          },
+          {
+            "type": "Spotify",
+            "url": "https://rebrand.ly/b065fe"
+          },
+          {
+            "type": "Deezer",
+            "url": "https://rebrand.ly/85ae69"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "fc3bd",
+    "game": "Far Cry 3 Blood Dragon",
+    "songs": [
+      {
+        "name": "Trilha Sonora Original",
+        "options": [
+          {
+            "type": "Youtube",
+            "url": "https://bit.ly/17r96xf"
+          },
+          {
+            "type": "Spotify",
+            "url": "https://spoti.fi/2HsQa7q"
+          },
+          {
+            "type": "Deezer",
+            "url": "https://bit.ly/2qCFiuh"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "fc4",
+    "game": "Far Cry 4",
+    "songs": [
+      {
+        "name": "Trilha Sonora Original",
+        "options": [
+          {
+            "type": "Youtube",
+            "url": "https://bit.ly/1yDkocE"
+          },
+          {
+            "type": "Spotify",
+            "url": "https://rebrand.ly/8ae98"
+          },
+          {
+            "type": "Deezer",
+            "url": "https://bit.ly/2HyintA"
+          }
+        ]
+      },
+      {
+        "name": "Músicas de Rádio",
+        "options": [
+          {
+            "type": "Spotify",
+            "url": "https://rebrand.ly/9r133d"
+          },
+          {
+            "type": "Deezer",
+            "url": "https://rebrand.ly/rferd85"
+          }
+        ]
+      },
+      {
+        "name": "Música Tema",
+        "options": [
+          {
+            "type": "Youtube",
+            "url": "https://rebrand.ly/32ed2"
+          },
+          {
+            "type": "Spotify",
+            "url": "https://rebrand.ly/f4t736"
+          },
+          {
+            "type": "Deezer",
+            "url": "https://rebrand.ly/ebbdd4"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "fcp",
+    "game": "Far Cry Primal",
+    "songs": [
+      {
+        "name": "Trilha Sonora Original",
+        "options": [
+          {
+            "type": "Youtube",
+            "url": "https://bit.ly/1I4TzRI"
+          },
+          {
+            "type": "Spotify",
+            "url": "https://spoti.fi/1LeEdzu"
+          },
+          {
+            "type": "Deezer",
+            "url": "https://bit.ly/2qCARzt"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "fc5",
+    "game": "Far Cry 5",
+    "songs": [
+      {
+        "name": "Into the Flames (região do Jacob)",
+        "options": [
+          {
+            "type": "Youtube",
+            "url": "https://bit.ly/2FInSBP"
+          },
+          {
+            "type": "Spotify",
+            "url": "https://spoti.fi/2qCpCXd"
+          },
+          {
+            "type": "Deezer",
+            "url": "https://bit.ly/2ESQ2c9"
+          }
+        ]
+      },
+      {
+        "name": "When the World Falls (região do John)",
+        "options": [
+          {
+            "type": "Youtube",
+            "url": "https://bit.ly/2HHiD7x"
+          },
+          {
+            "type": "Spotify",
+            "url": "https://spoti.fi/2vm59LB"
+          },
+          {
+            "type": "Deezer",
+            "url": "https://bit.ly/2qAnzUo"
+          }
+        ]
+      },
+      {
+        "name": "We Will Rise Again (região da Faith)",
+        "options": [
+          {
+            "type": "Youtube",
+            "url": "https://bit.ly/2vkEfEd"
+          },
+          {
+            "type": "Spotify",
+            "url": "https://spoti.fi/2qE16Vx"
+          },
+          {
+            "type": "Deezer",
+            "url": "https://bit.ly/2JTcRAg"
+          }
+        ]
+      },
+      {
+        "name": "Trilha Sonora Original",
+        "options": [
+          {
+            "type": "Youtube",
+            "url": "https://bit.ly/2qBRxqK"
+          },
+          {
+            "type": "Spotify",
+            "url": "https://spoti.fi/2vocafb"
+          },
+          {
+            "type": "Deezer",
+            "url": "https://bit.ly/2HHvM0e"
+          }
+        ]
+      },
+      {
+        "name": "Inside Eden's Gate (trilha do filme)",
+        "options": [
+          {
+            "type": "Youtube",
+            "url": "https://bit.ly/2tPCRsn"
+          },
+          {
+            "type": "Spotify",
+            "url": "https://spoti.fi/2qE1dQX"
+          },
+          {
+            "type": "Deezer",
+            "url": "https://bit.ly/2ER8WQT"
+          }
+        ]
+      },
+      {
+        "name": "Músicas Licenciadas e Rádios",
+        "options": [
+          {
+            "type": "Spotify",
+            "url": "https://rebrand.ly/d62ca"
+          },
+          {
+            "type": "Deezer",
+            "url": "https://rebrand.ly/eb6fd8"
+          }
+        ]
+      },
+      {
+        "name": "Música - 'Happy Together' (Trailer Cooperativo)",
+        "options": [
+          {
+            "type": "Spotify",
+            "url": "https://rebrand.ly/06a6f"
+          },
+          {
+            "type": "Deezer",
+            "url": "https://rebrand.ly/64517"
+          }
+        ]
+      },
+      {
+        "name": "Far Cry Arcade",
+        "options": [
+          {
+            "type": "Youtube",
+            "url": "http://bit.ly/2xtPjj5"
+          },
+          {
+            "type": "Spotify",
+            "url": "https://spoti.fi/2J1nn7H"
+          },
+          {
+            "type": "Deezer",
+            "url": "http://bit.ly/2H7qNUD"
+          }
+        ]
+      },
+      {
+        "name": "DLC 'Hours of Darkness'",
+        "options": [
+          {
+            "type": "Youtube",
+            "url": "http://bit.ly/FC5HoDTrilha"
+          },
+          {
+            "type": "Spotify",
+            "url": "https://spoti.fi/2J5Qvuq"
+          },
+          {
+            "type": "Deezer",
+            "url": "http://bit.ly/2J2E96k"
+          }
+        ]
+      },
+      {
+        "name": "DLC 'Lost on Mars'",
+        "options": [
+          {
+            "type": "Youtube",
+            "url": "http://bit.ly/2mqtQQ1"
+          },
+          {
+            "type": "Spotify",
+            "url": "https://spoti.fi/2mnxVEt"
+          },
+          {
+            "type": "Deezer",
+            "url": "http://bit.ly/2NnUzba"
+          }
+        ]
+      },
+      {
+        "name": "DLC 'Dead Living Zombies'",
+        "options": [
+          {
+            "type": "Youtube",
+            "url": "https://rb.gy/nqcig9"
+          },
+          {
+            "type": "Spotify",
+            "url": "https://rb.gy/s0c0mc"
+          },
+          {
+            "type": "Deezer",
+            "url": "https://rb.gy/uzzrsr"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "fcnd",
+    "game": "Far Cry New Dawn",
+    "songs": [
+      {
+        "name": "Trilha Sonora Original",
+        "options": [
+          {
+            "type": "Youtube",
+            "url": "https://rb.gy/tv9bgl"
+          },
+          {
+            "type": "Spotify",
+            "url": "https://rb.gy/4l67uc"
+          },
+          {
+            "type": "Deezer",
+            "url": "https://rb.gy/uqd6q2"
+          }
+        ]
+      },
+      {
+        "name": "Músicas Licenciadas e Rádios",
+        "options": [
+          {
+            "type": "Spotify",
+            "url": "https://rb.gy/4l67uc"
+          },
+          {
+            "type": "Deezer",
+            "url": "https://rb.gy/xux45f"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "fc6",
+    "game": "Far Cry 6",
+    "songs": [
+      {
+        "name": "Trilha Sonora do Trailer Cinemático",
+        "options": [
+          {
+            "type": "Youtube",
+            "url": "https://youtu.be/R_iN9Nsvryc"
+          }
+        ]
+      },
+      {
+        "name": "Música - 'This is How it Goes' (Trailer Resolver)",
+        "options": [
+          {
+            "type": "Youtube",
+            "url": "https://youtu.be/MxZfRXbty7M"
+          },
+          {
+            "type": "Deezer",
+            "url": "https://rebrand.ly/4e1fe8"
+          },
+          {
+            "type": "Spotify",
+            "url": "https://rebrand.ly/1b54bb"
+          }
+        ]
+      }
+    ]
+  }
+]

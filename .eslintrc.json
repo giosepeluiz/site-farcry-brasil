@@ -43,7 +43,7 @@
       // NextJs specific fix: suppress errors for missing 'import React' in files for nextjs
       // NextJs specific fix: allow jsx syntax in js files
       // "no-console": "off",
-      // "jsx-a11y/no-onchange": "off",
+      "jsx-a11y/no-onchange": "off",
       "react/display-name": 1
     }
   }
