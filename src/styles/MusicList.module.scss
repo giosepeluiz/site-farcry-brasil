@@ -20,3 +20,10 @@
         }
     }
 }
+
+@include breakpoint('small-only'){
+    .select {
+        width: calc(100vw - 10px);
+        max-width: calc(100vw - 10px);
+    } 
+}

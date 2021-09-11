@@ -36,3 +36,9 @@
         text-shadow: 2px 2px 1px var(--color-farcry-black);
     }
 }
+
+@include breakpoint('small-only'){
+    .title-big {
+        font-size: rem(40);
+    } 
+}
