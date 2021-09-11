@@ -53,7 +53,7 @@ export default function Id() {
               height: 600,
               alt: "Comunidade Oficial de Far Cry - Trilha Sonora",
             },
-            { url: "images/og-musicas-banner.jpg" },
+            { url: "images/og-music-banner.jpg" },
           ],
           site_name: "SiteName",
         }}

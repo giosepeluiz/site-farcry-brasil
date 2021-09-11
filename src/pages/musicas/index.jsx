@@ -25,7 +25,7 @@ export default function Musicas() {
               height: 600,
               alt: "Comunidade Oficial de Far Cry | Trilha Sonora",
             },
-            { url: "https://farcry.arqueirover.de/og-musicas-banner.jpg" },
+            { url: "https://farcry.arqueirover.de/og-music-banner.jpg" },
           ],
           site_name: "Comunidade Oficial de Far Cry",
         }}
