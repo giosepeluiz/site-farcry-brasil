@@ -7,21 +7,8 @@ import styles from "../../styles/Home.module.scss";
 import GameList from "../../components/GameList";
 import ListHeader from "../../components/ListHeader";
 
-const isFarCry = (value) => {
-  switch (value) {
-    case "fc2":
-    case "fc3":
-    case "fc3bd":
-    case "fc4":
-    case "fcp":
-    case "fc5":
-    case "fcnd":
-    case "fc6":
-      return true;
-    default:
-      return false;
-  }
-};
+// Função que verifica se a URL aponta que é um jogo Far Cry
+import isFarCry from "../../functions/playlistFunctions";
 
 export default function Id() {
   // Chama o hook useRouter()
