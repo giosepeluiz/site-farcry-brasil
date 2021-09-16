@@ -5,7 +5,7 @@ import styles from "../styles/GameList.module.scss";
 import MusicList from "./MusicList";
 
 const GameList = (props) => {
-  // Recebendo a informação da ID do jogo do componente principal
+  // Recebe a informação da ID do jogo do componente principal
   const { gameId } = props;
 
   // Gera a URL com a rota: /musicas/jogo
@@ -16,7 +16,7 @@ const GameList = (props) => {
     router.push(`/musicas/${value}`);
   };
 
-  // pega a lista de músicas do jogo em "gameId"
+  // Pega a lista de músicas do jogo em "gameId"
   const [game] = data.filter((info) => info.id === gameId);
 
   return (

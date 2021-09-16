@@ -8,7 +8,7 @@ import GameList from "../../components/GameList";
 import ListHeader from "../../components/ListHeader";
 
 // Função que verifica se a URL aponta que é um jogo Far Cry
-import isFarCry from "../../functions/playlistFunctions";
+import { isFarCry } from "../../functions/playlistFunctions";
 
 export default function Id() {
   // Chama o hook useRouter()

@@ -7,7 +7,8 @@ import logo from "../../public/images/community-logo.svg";
 import menuOpen from "../../public/images/menu-bars.svg";
 import menuClose from "../../public/images/menu-close.svg";
 
-const gotoUrl = (url) => window.open(url, "_blank");
+// Abre um link em uma nova janela
+import gotoUrl from "../functions/headerFunctions";
 
 const Header = () => {
   const [menu, setMenu] = useState();

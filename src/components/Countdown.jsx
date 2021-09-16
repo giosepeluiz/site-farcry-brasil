@@ -2,21 +2,8 @@ import { useEffect, useState } from "react";
 import styles from "../styles/Countdown.module.scss";
 import CommunityTitle from "./CommunityTitle";
 
-// Acrescenta um ZERO à ESQUERDA
-const padLeft = (value) => {
-  if (value < 10) {
-    return String(value).padStart(2, "0");
-  }
-  return String(value);
-};
-
-// Verifica se o valor é PLURAL ou SINGULAR
-const isPlural = (value) => {
-  if (value === "00" || value === "01") {
-    return false;
-  }
-  return true;
-};
+// Funções necessárias para o funcionamento
+import { padLeft, isPlural } from "../functions/countdownFunctions";
 
 const Countdown = (props) => {
   const [time, setTime] = useState(null);
