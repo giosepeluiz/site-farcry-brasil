@@ -22,7 +22,7 @@
     "next-env.d.ts",
     "**/*.ts",
     "**/*.tsx"
-  ],
+, "src/components/Countdown.jsx", "src/pages/musicas/index.jsx"  ],
   "exclude": [
     "node_modules"
   ]
