@@ -1,5 +1,16 @@
 @import "vendor/_defaults";
 
+@keyframes chorizoLoading {
+  0%{background-position: 0}
+  50%{background-position: -16000px}
+  100%{background-position: 0}
+}
+
+@keyframes chorizoActive {
+  0%{background-position:0}
+  100%{background-position:-23500px}
+}
+
 .countdown {
   display: flex;
   flex-direction: row;
@@ -29,9 +40,27 @@
   }
 }
 
+.loading {
+  width: rem(250);
+  height: rem(150);
+  background-image : url("/images/chorizo-sprite.png");
+  animation: chorizoLoading 3s steps(64) infinite;
+
+  &:hover {
+    background-image : url("/images/chorizo-active.png");
+    animation: chorizoActive 3s steps(94) infinite;
+  }
+}
+
+
+
 @include breakpoint("medium-only") {
   .countdown {
     zoom: 0.7;
+
+    .loading {
+      zoom: 1.5;
+    }
   }
 }
 
