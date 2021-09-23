@@ -11,7 +11,7 @@ import menuClose from "../../public/images/menu-close.svg";
 import gotoUrl from "../functions/headerFunctions";
 
 const Header = () => {
-  const [menu, setMenu] = useState();
+  const [menu, setMenu] = useState<boolean>();
 
   const isClosed = (value) => {
     switch (value) {
