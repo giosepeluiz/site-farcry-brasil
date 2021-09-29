@@ -154,7 +154,7 @@ const gamelist: GamelistModel[] = [
       new SongModel("Spotify", "https://spoti.fi/1LeEdzu"),
       new SongModel("Youtube", "https://bit.ly/1I4TzRI"),
     ]),
-    new PlaylistModel(1, 'Música - "This is How it Goes" (Trailer Resolver)', [
+    new PlaylistModel(2, 'Música - "This is How it Goes" (Trailer Resolver)', [
       new SongModel("Deezer", "https://rebrand.ly/4e1fe8"),
       new SongModel("Spotify", "https://rebrand.ly/1b54bb"),
       new SongModel("Youtube", "https://youtu.be/MxZfRXbty7M"),
