@@ -7,7 +7,7 @@ import { toFriendlyText } from "../functions/playlistFunctions";
 
 const MusicList = (props) => {
   const router = useRouter();
-  const { songs, gameId } = props;
+  const { songs, gameId, songsLength } = props;
 
   // Caso a rota retorne UNDEFINED, isso é ignorado
   if (typeof router.query.id === "undefined") {
@@ -16,6 +16,13 @@ const MusicList = (props) => {
 
   // Caso retorne algo, será atribuído à constante ID
   const musicId = router.query.id[1];
+
+  const isSong = () => {
+    if (+musicId > 0 && +musicId <= songsLength) {
+      return true;
+    }
+    return false;
+  };
 
   const handleClick = (e) => {
     const { value } = e.target;
@@ -26,22 +33,21 @@ const MusicList = (props) => {
   return (
     <>
       <select
-        value={musicId || "default"}
+        value={isSong() ? musicId : "default"}
         className={styles.select}
         onChange={(e) => handleClick(e)}>
         <option value="default" disabled>
           Selecione o que quer ouvir
         </option>
         {songs.map((map, index) => (
-          <option key={toFriendlyText(map.name)} value={index}>
+          <option key={toFriendlyText(map.name)} value={index + 1}>
             {map.name}
           </option>
         ))}
       </select>
 
-      {musicId && <Song song={songs[musicId].options} />}
+      {isSong() && <Song song={songs[+musicId - 1].options} />}
     </>
   );
 };
-
 export default MusicList;

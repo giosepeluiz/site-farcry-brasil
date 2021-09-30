@@ -41,9 +41,10 @@ const GameList = (props) => {
               alt: `Comunidade Oficial de Far Cry | Trilha Sonora${game ? `${game.game}` : ""}`,
             },
             {
-              url: `https://farcry.arqueirover.de/images/og-music-banner${
-                game ? `-${game.id}` : ""
-              }.jpg`,
+              // url: `https://farcry.arqueirover.de/images/og-music-banner${
+              //   game ? `-${game.id}` : ""
+              // }.jpg`,
+              url: `https://farcry.arqueirover.de/images/og-music-banner.jpg`,
             },
           ],
           site_name: "Comunidade Oficial de Far Cry",
@@ -69,7 +70,7 @@ const GameList = (props) => {
         ))}
       </select>
 
-      {gameId && <MusicList songs={game.songs} gameId={gameId} />}
+      {gameId && <MusicList songs={game.songs} songsLength={game.songs.length} gameId={gameId} />}
     </>
   );
 };

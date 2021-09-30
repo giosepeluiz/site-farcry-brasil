@@ -8,7 +8,7 @@
         "options": [
           {
             "type": "Youtube",
-            "url": "https://bit.ly/1vjaPQv"
+            "url": "https://youtu.be/zvRfmn3DT_U"
           },
           {
             "type": "Spotify",
@@ -16,7 +16,7 @@
           },
           {
             "type": "Deezer",
-            "url": "https://bit.ly/2Hqd8MN"
+            "url": "https://deezer.page.link/d2jcLYWavGUWHD9m7"
           }
         ]
       }
@@ -399,6 +399,23 @@
     "id": "fc6",
     "game": "Far Cry 6",
     "songs": [
+      {
+        "name": "Trilha Sonora Oficial",
+        "options": [
+          {
+            "type": "Youtube",
+            "url": "https://music.youtube.com/playlist?list=OLAK5uy_lNEK6SjVmt3rEW5Z9qlDGoFIGhVx0JH-w&feature=share"
+          },
+          {
+            "type": "Deezer",
+            "url": "https://deezer.page.link/K1tu5Gxv2WkqnxGv7"
+          },
+          {
+            "type": "Spotify",
+            "url": "https://open.spotify.com/album/464LjhUxPGmVwhm49mmSXg?si=G108RiO1SAahnfYWyoALzA&dl_branch=1"
+          }
+        ]
+      },
       {
         "name": "Trilha Sonora do Trailer Cinemático",
         "options": [
