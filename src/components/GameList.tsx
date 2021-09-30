@@ -28,24 +28,17 @@ const GameList = (props) => {
         }`}
         openGraph={{
           type: "website",
-          url: `https://farcry.arqueirover.de/musicas/${game ? `${game.id}` : ""}`,
-          title: `Comunidade Oficial de Far Cry | Trilha Sonora${game ? ` | ${game.game}` : ""}`,
-          description: `Comunidade Oficial de Far Cry | Trilha Sonora${
-            game ? ` | ${game.game}` : ""
-          }`,
+          url: "https://farcry.arqueirover.de/musicas",
+          title: "Comunidade Oficial de Far Cry | Trilha Sonora",
+          description: "Comunidade Oficial de Far Cry | Trilha Sonora",
           images: [
             {
               url: ".",
               width: 800,
               height: 600,
-              alt: `Comunidade Oficial de Far Cry | Trilha Sonora${game ? `${game.game}` : ""}`,
+              alt: "Comunidade Oficial de Far Cry | Trilha Sonora",
             },
-            {
-              // url: `https://farcry.arqueirover.de/images/og-music-banner${
-              //   game ? `-${game.id}` : ""
-              // }.jpg`,
-              url: `https://farcry.arqueirover.de/images/og-music-banner.jpg`,
-            },
+            { url: "https://farcry.arqueirover.de/og-music-banner.jpg" },
           ],
           site_name: "Comunidade Oficial de Far Cry",
         }}
