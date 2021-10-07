@@ -399,6 +399,23 @@
     "id": "fc6",
     "game": "Far Cry 6",
     "songs": [
+{
+        "name": "Músicas Licenciadas e de Rádio",
+        "options": [
+          {
+            "type": "Youtube",
+            "url": "https://youtube.com/playlist?list=PLu6_FOgZp3eh8ME9oJCAtLKrw9SMESGmg"
+          },
+          {
+            "type": "Deezer",
+            "url": "https://deezer.page.link/9YrZ5JeW1JvXVmdR6"
+          },
+          {
+            "type": "Spotify",
+            "url": "https://open.spotify.com/album/4FbztpW4HQktzl4koc3gdm"
+          }
+        ]
+      },
       {
         "name": "Trilha Sonora Oficial",
         "options": [
