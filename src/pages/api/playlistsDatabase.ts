@@ -159,6 +159,26 @@ const gamelist: GamelistModel[] = [
       new SongModel("Spotify", "https://rebrand.ly/1b54bb"),
       new SongModel("Youtube", "https://youtu.be/MxZfRXbty7M"),
     ]),
+    new PlaylistModel(3, 'Trilha Sonora DLC Vaas: Insanidade', [
+      new SongModel("Deezer", "https://www.deezer.com/en/album/268810292"),
+      new SongModel("Spotify", "https://open.spotify.com/album/1f0Mo6UwACo4SZ9vW5W01b"),
+      new SongModel("Youtube", "https://youtube.com/watch?v=WwT_NZK5AAM&list=PLu6_FOgZp3ejKRDpXeHPPYBRAFk7a5egn"),
+    ]),
+    new PlaylistModel(4, 'Trilha Sonora DLC Pagan: Controle', [
+      new SongModel("Deezer", "https://www.deezer.com/fr/album/282034952"),
+      new SongModel("Spotify", "https://open.spotify.com/album/7CdKxu2tI0VEG3UW5jK1Yl"),
+      new SongModel("Youtube", "https://youtube.com/watch?v=ZNr7iltHxXE&list=PLu6_FOgZp3eiViLu7Vqtf_IznDpk-r2jO"),
+    ]),
+    new PlaylistModel(5, 'Trilha Sonora DLC Joseph: Controle', [
+      new SongModel("Deezer", "https://www.deezer.com/album/290369502"),
+      new SongModel("Spotify", "https://open.spotify.com/album/1Br3nuLQ2STGEdKVjyVh3W"),
+      new SongModel("Youtube", "https://www.youtube.com/watch?v=z5mAMyRvSv0&list=PLu6_FOgZp3egcODuQmJJzIJTyL-TaGQdN&index=1"),
+    ]),
+    new PlaylistModel(6, 'Trilha Sonora DLC Stranger Things', [
+      new SongModel("Deezer", "https://www.deezer.com/en/album/304586637"),
+      new SongModel("Spotify", "https://open.spotify.com/album/2BXZ1jHQYB3Zj4Grqd6lhg"),
+      new SongModel("Youtube", "https://www.youtube.com/watch?v=0OxZi1tnUG0&list=PLu6_FOgZp3ejuwaZPvWvyXG4A5JvciDrm"),
+    ]),
   ]),
 ];
 

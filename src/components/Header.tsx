@@ -82,7 +82,7 @@ const Header = () => {
             target="_blank"
             href="https://www.ubisoft.com/pt-br/game/far-cry/far-cry-6/buy"
             rel="noreferrer">
-            Pré-venda
+            Adquira
           </a>
         </span>
         <span>
@@ -90,7 +90,7 @@ const Header = () => {
             target="_blank"
             href="https://www.ubisoft.com/pt-br/game/far-cry/far-cry-6/buy"
             rel="noreferrer">
-            disponível
+            Far Cry 6
           </a>
         </span>
       </div>
