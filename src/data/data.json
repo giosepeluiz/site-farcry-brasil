@@ -438,7 +438,7 @@
         "options": [
           {
             "type": "Youtube",
-            "url": "https://youtu.be/R_iN9Nsvryc"
+            "url": "https://www.youtube.com/watch?v=6UaWhlkpT7g"
           }
         ]
       },
@@ -456,6 +456,74 @@
           {
             "type": "Spotify",
             "url": "https://rebrand.ly/1b54bb"
+          }
+        ]
+      },
+      {
+        "name": "DLC 'Vaas: Insanidade'",
+        "options": [
+          {
+            "type": "Youtube",
+            "url": "https://youtube.com/watch?v=WwT_NZK5AAM&list=PLu6_FOgZp3ejKRDpXeHPPYBRAFk7a5egn"
+          },
+          {
+            "type": "Deezer",
+            "url": "https://www.deezer.com/en/album/268810292"
+          },
+          {
+            "type": "Spotify",
+            "url": "https://open.spotify.com/album/1f0Mo6UwACo4SZ9vW5W01b"
+          }
+        ]
+      },
+      {
+        "name": "DLC 'Pagan: Controle'",
+        "options": [
+          {
+            "type": "Youtube",
+            "url": "https://youtube.com/watch?v=ZNr7iltHxXE&list=PLu6_FOgZp3eiViLu7Vqtf_IznDpk-r2jO"
+          },
+          {
+            "type": "Deezer",
+            "url": "https://www.deezer.com/fr/album/282034952"
+          },
+          {
+            "type": "Spotify",
+            "url": "https://open.spotify.com/album/7CdKxu2tI0VEG3UW5jK1Yl"
+          }
+        ]
+      },
+      {
+        "name": "DLC 'Joseph: Controle'",
+        "options": [
+          {
+            "type": "Youtube",
+            "url": "https://www.youtube.com/watch?v=z5mAMyRvSv0&list=PLu6_FOgZp3egcODuQmJJzIJTyL-TaGQdN"
+          },
+          {
+            "type": "Deezer",
+            "url": "https://www.deezer.com/album/290369502"
+          },
+          {
+            "type": "Spotify",
+            "url": "https://open.spotify.com/album/1Br3nuLQ2STGEdKVjyVh3W"
+          }
+        ]
+      },
+      {
+        "name": "DLC 'Stranger Things x Far Cry 6'",
+        "options": [
+          {
+            "type": "Youtube",
+            "url": "https://www.youtube.com/watch?v=0OxZi1tnUG0&list=PLu6_FOgZp3ejuwaZPvWvyXG4A5JvciDrm"
+          },
+          {
+            "type": "Deezer",
+            "url": "https://www.deezer.com/en/album/304586637"
+          },
+          {
+            "type": "Spotify",
+            "url": "https://open.spotify.com/album/2BXZ1jHQYB3Zj4Grqd6lhg"
           }
         ]
       }
