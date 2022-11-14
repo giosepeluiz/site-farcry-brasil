@@ -1,9 +1,9 @@
 import { useEffect, useState } from "react";
-import styles from "../styles/Countdown.module.scss";
-import CommunityTitle from "./CommunityTitle";
+import styles from "@/styles/Countdown.module.scss";
+import Title from "@/components/Title";
 
 // Funções necessárias para o funcionamento
-import { isPlural, countdownTrigger } from "../functions/countdownFunctions";
+import { isPlural, countdownTrigger } from "@/functions/countdownFn";
 
 const Countdown = (props) => {
   const [loaded, setLoaded] = useState(0);
@@ -49,7 +49,7 @@ const Countdown = (props) => {
       )}
       {!time &&
         (loaded === -1 ? (
-          <CommunityTitle title="Comunidade" subtitle="Oficial" />
+          <Title title="Comunidade" subtitle="Oficial" />
         ) : (
           <div className={styles.loading} />
         ))}

@@ -1,14 +1,10 @@
 import Image from "next/image";
 import Link from "next/link";
 import { useState } from "react";
-import styles from "../styles/Header.module.scss";
-
-import logo from "../../public/images/community-logo.svg";
-import menuOpen from "../../public/images/menu-bars.svg";
-import menuClose from "../../public/images/menu-close.svg";
+import styles from "@/styles/Header.module.scss";
 
 // Abre um link em uma nova janela
-import gotoUrl from "../functions/headerFunctions";
+import gotoUrl from "@/functions/headerFn";
 
 const Header = () => {
   const [menu, setMenu] = useState<boolean>();
@@ -28,14 +24,19 @@ const Header = () => {
     <header className={styles.header}>
       <div className={styles.logo}>
         <a target="_blank" href="https://www.facebook.com/groups/farcrybrasil" rel="noreferrer">
-          <Image src={logo} width="200" height="50" alt="Logo Comunidade Far Cry Brasil" />
+          <Image
+            src="/images/community-logo.svg"
+            width="200"
+            height="50"
+            alt="Logo Comunidade Far Cry Brasil"
+          />
         </a>
       </div>
 
       {!menu && (
         <div className={styles["menu-button"]}>
           <Image
-            src={menuOpen}
+            src="/images/menu-bars.svg"
             alt="Abrir Menu"
             width="30"
             height="30"
@@ -48,7 +49,7 @@ const Header = () => {
         {menu && (
           <div className={styles["menu-button"]}>
             <Image
-              src={menuClose}
+              src="/images/menu-close.svg"
               alt="Fechar Menu"
               width="30"
               height="30"
