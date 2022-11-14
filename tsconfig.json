@@ -24,6 +24,12 @@
     "jsx": "preserve",
     "incremental": true
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", "src/data/dato_cms.js"],
+  "include": [
+    "next-env.d.ts",
+    "**/*.ts",
+    "**/*.tsx",
+    "src/data/dato_cms.js",
+    "src/functions/countdownFn.js"
+  ],
   "exclude": ["node_modules"]
 }
