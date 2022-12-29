@@ -42,7 +42,7 @@ export const getAllGames = async () => {
 export const getAllSongs = async () => {
   const data = await fetchCmsAPI(`
         {
-          allFcsongs(orderBy: _createdAt_DESC, first: "50"){
+          allFcsongs(orderBy: _updatedAt_ASC, first: "50"){
             id
             gameId
             gamePlaylist
