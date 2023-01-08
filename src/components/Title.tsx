@@ -1,4 +1,4 @@
-import styles from "../styles/CommunityTitle.module.scss";
+import styles from "@/styles/Title.module.scss";
 
 const CommunityTitle = (props) => {
   const { title, subtitle } = props;

@@ -1,12 +1,14 @@
 import { NextSeo } from "next-seo";
-import Footer from "../../components/Footer";
-import Header from "../../components/Header";
+import Footer from "@/components/Footer";
+import Header from "@/components/Header";
 
-import styles from "../../styles/Home.module.scss";
-import GameList from "../../components/GameList";
-import ListHeader from "../../components/ListHeader";
+import styles from "@/styles/Home.module.scss";
+import GameListSelection from "@/components/GameListSelection";
+import GameListHeader from "@/components/GameListHeader";
 
-export default function Musicas() {
+import { getAllGames } from "@/data/dato_cms";
+
+export default function Musicas({ games }) {
   return (
     <div className={styles.container}>
       {/* SEO com personalização - Documentação: https://www.npmjs.com/package/next-seo */}
@@ -42,11 +44,21 @@ export default function Musicas() {
       <Header />
 
       <main className={styles.main}>
-        <ListHeader />
-        <GameList />
+        <GameListHeader />
+        <GameListSelection games={games} />
       </main>
 
       <Footer />
     </div>
   );
 }
+
+export const getStaticProps = async () => {
+  const games = await getAllGames();
+  return {
+    props: {
+      games,
+    },
+    revalidate: 100,
+  };
+};

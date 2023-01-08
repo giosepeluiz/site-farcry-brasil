@@ -5,7 +5,7 @@ export const isFarCry = (value) => {
     case "fc3":
     case "fc3bd":
     case "fc4":
-    case "fcp":
+    case "fcprimal":
     case "fc5":
     case "fcnd":
     case "fc6":

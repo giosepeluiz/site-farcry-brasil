@@ -38,22 +38,22 @@
     "plugins": ["react", "react-hooks"],
     "rules": {
       "import/extensions": [
-        "error",
-        "ignorePackages",
-        {
-          "js": "never",
-          "jsx": "never",
-          "ts": "never",
-          "tsx": "never"
-        }
-     ],
+          "error",
+          "ignorePackages",
+          {
+            "js": "never",
+            "jsx": "never",
+            "ts": "never",
+            "tsx": "never"
+          }
+      ],
       "react/jsx-filename-extension": [1, { "extensions": [".js", ".jsx", ".ts", ".tsx"] }],
       "react/react-in-jsx-scope": "off",
       "react/jsx-props-no-spreading": "off",
       // NextJs specific fix: suppress errors for missing 'import React' in files for nextjs
       // NextJs specific fix: allow jsx syntax in js files
       // "no-console": "off",
-      "jsx-a11y/no-onchange": "off",
+      // "jsx-a11y/no-onchange": "off",
       "react/display-name": 1
     }
   }
