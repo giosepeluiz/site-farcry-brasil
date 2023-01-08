@@ -20,8 +20,6 @@ const GameListHeader = (props) => {
             width="600"
             height="200"
             alt="Músicas Licenciadas e Trilhas Sonoras"
-            placeholder="blur"
-            blurDataURL={`/images/logo-${game}.png`}
           />
         </div>
       )}
