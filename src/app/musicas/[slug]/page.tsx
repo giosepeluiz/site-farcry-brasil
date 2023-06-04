@@ -12,7 +12,7 @@ import GameListHeader from "../components/GameListHeader";
 import { isFarCry } from "@/functions/playlistFn";
 import { Props } from "@/models/Interfaces";
 
-export default function Slug(props: Props) {
+export function Slug(props: Props) {
   const { songs, games } = props;
 
   // Chama o hook useRouter()
