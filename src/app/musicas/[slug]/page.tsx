@@ -12,7 +12,7 @@ import GameListHeader from "../components/GameListHeader";
 import { isFarCry } from "@/functions/playlistFn";
 import { Props } from "@/models/Interfaces";
 
-export function Slug(props: Props) {
+const Musicas: React.FC<Props> = (props: Props) => {
   const { songs, games } = props;
 
   // Chama o hook useRouter()
@@ -36,4 +36,6 @@ export function Slug(props: Props) {
       <Footer />
     </div>
   );
-}
+};
+
+export default Musicas;
