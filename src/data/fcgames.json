@@ -1,0 +1,26 @@
+[
+  { "id": "fc1", "title": "Far Cry", "hasSongs": false, "releaseDate": "23 de março de 2004" },
+  { "id": "fc2", "title": "Far Cry 2", "hasSongs": true, "releaseDate": "21 de outubro de 2008" },
+  { "id": "fc3", "title": "Far Cry 3", "hasSongs": true, "releaseDate": "29 de novembro de 2012" },
+  {
+    "id": "fcbd",
+    "title": "Far Cry 3 Blood Dragon",
+    "hasSongs": true,
+    "releaseDate": "30 de abril de 2013"
+  },
+  { "id": "fc4", "title": "Far Cry 4", "hasSongs": true, "releaseDate": "18 de novembro de 2014" },
+  {
+    "id": "fcprimal",
+    "title": "Far Cry Primal",
+    "hasSongs": true,
+    "releaseDate": "23 de fevereiro de 2016"
+  },
+  { "id": "fc5", "title": "Far Cry 5", "hasSongs": true, "releaseDate": "27 de março de 2018" },
+  {
+    "id": "fcnd",
+    "title": "Far Cry New Dawn",
+    "hasSongs": true,
+    "releaseDate": "15 de fevereiro de 2019"
+  },
+  { "id": "fc6", "title": "Far Cry 6", "hasSongs": true, "releaseDate": "7 de outubro de 2021" }
+]

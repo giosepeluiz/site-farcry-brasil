@@ -1,5 +1,5 @@
 // ==========================================================================
-// Color Scheme 1 Name
+// Esquema de cores do projeto
 // ==========================================================================
 
 $color-farcry: (
@@ -11,6 +11,52 @@ $color-farcry: (
 
 :root {
   @each $name, $color in $color-farcry {
+    --color-#{$name}: #{$color};
+  }
+}
+
+// ==========================================================================
+// Esquema de cores padrão
+// ==========================================================================
+
+$defaults: (
+  "success": #3cc368,
+  "warning": #f5a600,
+  "error": #ec5840,
+  "black": #000000,
+  "gray-1": #363636,
+  "gray-2": #4f4f4f,
+  "gray-3": #828282,
+  "gray-4": #bdbdbd,
+  "gray-5": #e0e0e0,
+  "gray-6": #f0f0f0,
+  "white": #fcfcfc,
+);
+
+:root {
+  @each $name, $color in $defaults {
+    --color-#{$name}: #{$color};
+  }
+}
+
+// ==========================================================================
+// Social Media Colors
+// ==========================================================================
+
+$social-media: (
+  "facebook": #3b5998,
+  "twitter": #00aced,
+  "linkedin": #0077b5,
+  "youtube": #cd201f,
+  "instagram": #e4405f,
+  "github": #333,
+  "telegram": #0088cc,
+  "vk": #45668e,
+  "tiktok": #69c9d0,
+);
+
+:root {
+  @each $name, $color in $social-media {
     --color-#{$name}: #{$color};
   }
 }

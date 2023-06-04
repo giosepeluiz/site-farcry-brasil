@@ -1,9 +1,12 @@
-import GameListSong from "@/components/GameListSong";
+"use client";
 
-import styles from "@/styles/GameListMusic.module.scss";
+import GameListSong from "./GameListSong";
+import { Props } from "@/models/Interfaces";
+
+import styles from "@/styles/GameListPlaylist.module.scss";
 import { useState } from "react";
 
-const GameListMusic = (props) => {
+const GameListPlaylist = (props: Props) => {
   // Puxa todas as músicas em "props"
   const { songs } = props;
 
@@ -11,10 +14,10 @@ const GameListMusic = (props) => {
   const [selectedSong, setSelectedSong] = useState(null);
 
   // Função que atribui a ação ao elemento "select"
-  const handleClick = (e) => {
+  const handleClick = (e: any) => {
     const { value } = e.target;
+    setSelectedSong(songs.filter((e: any) => e.id === value));
     e.preventDefault();
-    setSelectedSong(value);
   };
 
   // Retorna a lista de músicas de um determinado jogo
@@ -25,15 +28,16 @@ const GameListMusic = (props) => {
         className={styles.select}
         onChange={(e) => handleClick(e)}>
         <option value="default">Selecione o que quer ouvir</option>
-        {songs.map((el) => (
+        {songs.map((el: any) => (
           <option key={el.id} value={el.id}>
             {el.gamePlaylist}
           </option>
         ))}
       </select>
-      {selectedSong && <GameListSong song={selectedSong} playlist={songs} />}
+
+      {selectedSong && <GameListSong song={selectedSong} />}
     </>
   );
 };
 
-export default GameListMusic;
+export default GameListPlaylist;

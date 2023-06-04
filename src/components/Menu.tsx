@@ -1,15 +1,15 @@
+"use client";
+
 import Image from "next/image";
 import Link from "next/link";
 import { useState } from "react";
-import styles from "@/styles/Header.module.scss";
 
-// Abre um link em uma nova janela
-import gotoUrl from "@/functions/headerFn";
+import { StylesType } from "@/models/Interfaces";
 
-const Header = () => {
+const Menu = ({ styles }: { styles: StylesType }) => {
   const [menu, setMenu] = useState<boolean>();
 
-  const isClosed = (value) => {
+  const isClosed = (value: any) => {
     switch (value) {
       case true:
         return styles.open;
@@ -21,7 +21,7 @@ const Header = () => {
   };
 
   return (
-    <header className={styles.header}>
+    <>
       <div className={styles.logo}>
         <a target="_blank" href="https://www.facebook.com/groups/farcrybrasil" rel="noreferrer">
           <Image
@@ -58,45 +58,59 @@ const Header = () => {
           </div>
         )}
         <ul>
-          <Link passHref href="/">
-            <li>Início</li>
-          </Link>
-          <Link passHref href="/musicas">
-            <li>Trilhas Sonoras</li>
-          </Link>
-          <li
-            onClick={() => gotoUrl("https://www.facebook.com/groups/farcrybrasil")}
-            aria-hidden="true">
-            Comunidade
+          <li>
+            <Link passHref href="/" className={styles["menu-link"]}>
+              Início
+            </Link>
           </li>
-          <li
-            onClick={() => gotoUrl("https://www.ubisoft.com/pt-br/game/far-cry/far-cry-6")}
-            aria-hidden="true">
-            Site Oficial
+          <li>
+            <Link passHref href="/musicas" className={styles["menu-link"]}>
+              Trilhas Sonoras
+            </Link>
+          </li>
+          <li>
+            <Link
+              className={styles["menu-link"]}
+              passHref
+              href="https://www.facebook.com/groups/farcrybrasil"
+              aria-hidden="true"
+              target="_blank">
+              Comunidade
+            </Link>
+          </li>
+          <li>
+            <Link
+              className={styles["menu-link"]}
+              passHref
+              href="https://www.ubisoft.com/pt-br/game/far-cry/far-cry-6"
+              aria-hidden="true"
+              target="_blank">
+              Site Oficial
+            </Link>
           </li>
         </ul>
       </div>
 
       <div className={styles.buy} aria-hidden="true">
         <span>
-          <a
+          <Link
             target="_blank"
             href="https://www.ubisoft.com/pt-br/game/far-cry/far-cry-6/buy"
             rel="noreferrer">
             Adquira Far Cry 6
-          </a>
+          </Link>
         </span>
         <span>
-          <a
+          <Link
             target="_blank"
             href="https://www.ubisoft.com/pt-br/game/far-cry/far-cry-6/buy"
             rel="noreferrer">
             Clicando aqui
-          </a>
+          </Link>
         </span>
       </div>
-    </header>
+    </>
   );
 };
 
-export default Header;
+export default Menu;

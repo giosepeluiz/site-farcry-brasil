@@ -1,9 +1,9 @@
 // Função que verifica se a URL aponta que é um jogo Far Cry
-export const isFarCry = (value) => {
+export const isFarCry = (value: string) => {
   switch (value) {
     case "fc2":
     case "fc3":
-    case "fc3bd":
+    case "fcbd":
     case "fc4":
     case "fcprimal":
     case "fc5":
@@ -16,7 +16,7 @@ export const isFarCry = (value) => {
 };
 
 // Função que transforma uma frase em estilo url amigável
-export const toFriendlyText = (url) =>
+export const toFriendlyText = (url: string) =>
   url
     .toString() // Convert to string
     .normalize("NFD") // Change diacritics

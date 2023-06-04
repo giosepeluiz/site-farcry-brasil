@@ -69,9 +69,9 @@
     box-sizing: border-box;
   }
 
-  @include breakpoint('small-only'){
+  @include breakpoint("small-only") {
     .logo {
-      zoom: .8;
+      zoom: 0.8;
       margin-top: rem(15);
     }
   }
@@ -105,18 +105,20 @@
     }
   }
 
-  @include breakpoint('large-only'){
+  @include breakpoint("large-only") {
     .buy {
       display: none;
     }
   }
 
-  .menu-button, .menu .menu-button {
+  .menu-button,
+  .menu .menu-button {
     display: none;
   }
 
-  @include breakpoint('large-only'){
-    .menu-button, .menu .menu-button {
+  @include breakpoint("large-only") {
+    .menu-button,
+    .menu .menu-button {
       display: block;
       position: absolute;
       align-self: center;
@@ -124,11 +126,11 @@
       padding-top: rem(10);
       box-sizing: border-box;
 
-        img {
-          &:hover {
-            filter: opacity(.5);
-          }
+      img {
+        &:hover {
+          filter: opacity(0.5);
         }
+      }
     }
 
     .menu .menu-button {
@@ -137,7 +139,6 @@
   }
 
   .menu {
-    color: var(--color-farcry-white);
     padding: 0;
     ul {
       display: flex;
@@ -159,12 +160,20 @@
         z-index: z-index(above);
         cursor: pointer;
 
-          &:hover {
-            color: var(--color-farcry-black);
+        .menu-link {
+          color: var(--color-farcry-white);
+          text-decoration: none;
+          font-weight: 500;
+        }
 
-            &:after {
+        &:hover {
+          * {
+            color: var(--color-farcry-black);
+          }
+
+          &:after {
             content: "";
-            animation: roll-down .3s;
+            animation: roll-down 0.3s;
             background-color: var(--color-farcry-yellow);
             display: block;
             position: absolute;
@@ -173,23 +182,21 @@
             z-index: z-index(below);
           }
         }
-
       }
     }
   }
 
-  @include breakpoint('large-only'){
-    
+  @include breakpoint("large-only") {
     .menu {
       background-color: var(--color-farcry-black);
       height: 100vh;
       z-index: z-index(overlay);
       margin-right: rem(-210);
-    
+
       ul {
         flex-direction: column;
         margin-top: rem(70);
-        
+
         li {
           justify-content: left;
           height: rem(60);
@@ -198,10 +205,10 @@
             color: var(--color-farcry-black);
 
             &:after {
-              animation: roll-left .3s;
+              animation: roll-left 0.3s;
               height: rem(60);
               width: rem(200);
-              margin-left: rem(-20);              
+              margin-left: rem(-20);
             }
           }
         }
@@ -209,12 +216,12 @@
     }
 
     .open {
-      animation: open-menu .5s;
+      animation: open-menu 0.5s;
       margin-right: rem(0);
     }
 
     .close {
-      animation: close-menu .5s;
+      animation: close-menu 0.5s;
       margin-right: rem(-210);
     }
   }
