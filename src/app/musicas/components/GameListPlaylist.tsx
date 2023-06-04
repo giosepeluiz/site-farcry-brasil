@@ -1,17 +1,17 @@
 "use client";
 
 import GameListSong from "./GameListSong";
-import { Props } from "@/models/Interfaces";
+import { GameListPlaylist } from "@/models/Interfaces";
 
 import styles from "@/styles/GameListPlaylist.module.scss";
 import { useState } from "react";
 
-const GameListPlaylist = (props: Props) => {
+const GameListPlaylist = (props: GameListPlaylist) => {
   // Puxa todas as músicas em "props"
   const { songs } = props;
 
   // Quando uma música for selecionada, ela será atribuída ao estado "selectedSong"
-  const [selectedSong, setSelectedSong] = useState(null);
+  const [selectedSong, setSelectedSong] = useState<null | any>(null);
 
   // Função que atribui a ação ao elemento "select"
   const handleClick = (e: any) => {

@@ -1,11 +1,11 @@
 import styles from "@/styles/GameListSong.module.scss";
 import SongItem from "./SongItem";
-import { Props } from "@/models/Interfaces";
+import { GameListSong } from "@/models/Interfaces";
 
-const GameListSong = (props: Props) => {
+const GameListSong = (props: GameListSong) => {
   // Puxa as músicas e a ID da música selecionada para cá
   const { song } = props;
-  const selectedSong = song[0];
+  const selectedSong: any = song[0];
 
   // Retorna os elementos que inserem os ícones dos sites de streaming
   return (

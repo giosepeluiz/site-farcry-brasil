@@ -1,7 +1,7 @@
-import { Props } from "@/models/Interfaces";
+import { Title } from "@/models/Interfaces";
 import styles from "@/styles/Title.module.scss";
 
-const CommunityTitle = (props: Props) => {
+const CommunityTitle = (props: Title) => {
   const { title, subtitle } = props;
   return (
     <div className={styles["title-wrapper"]}>

@@ -1,10 +1,10 @@
 import Image from "next/image";
 import styles from "@/styles/GameListHeader.module.scss";
 
-import { Props } from "@/models/Interfaces";
+import { GameListHeader } from "@/models/Interfaces";
 
 // Cabeçalho dinâmico com o nome do jogo
-const GameListHeader = (props: Props) => {
+const GameListHeader = (props: GameListHeader) => {
   const { game } = props || null;
   return (
     <div className={styles.wrapper}>
