@@ -14,7 +14,7 @@ import { SlugInterface } from "@/models/Interfaces"; */
 // Função que verifica se a URL aponta que é um jogo Far Cry
 import { isFarCry } from "@/functions/playlistFn";
 
-const Slug = (props) => {
+const Slug = (props: any) => {
   const { songs, games } = props || null;
   console.log(songs);
 

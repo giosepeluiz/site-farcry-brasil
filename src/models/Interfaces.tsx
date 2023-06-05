@@ -15,6 +15,8 @@ export interface GameListPlaylist {
 
 export interface GameListSelection {
   game?: string;
+  games?: string[];
+  songs?: string[];
 }
 
 export interface GameListSong {
