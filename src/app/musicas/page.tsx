@@ -1,3 +1,5 @@
+"use client";
+
 // Importando os estilos do módulo Home.module.scss
 import Footer from "@/components/(home)/Footer";
 import Header from "@/components/(home)/Header";

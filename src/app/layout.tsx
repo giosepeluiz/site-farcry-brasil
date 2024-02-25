@@ -9,6 +9,7 @@ const inter = Inter({ subsets: ["latin"] });
 
 // Definindo os metadados para o layout raiz
 export const metadata = {
+  metadataBase: new URL("https://farcry.arqueirover.de"),
   title: "Início - Comunidade Oficial de Far Cry",
   description: "Início - Comunidade Oficial de Far Cry",
   icons: {
