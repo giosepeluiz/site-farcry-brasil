@@ -1,14 +1,14 @@
 // Função que verifica se a URL aponta que é um jogo Far Cry
 export const isFarCry = (value: string) => {
   switch (value) {
-    case "fc2":
-    case "fc3":
-    case "fcbd":
-    case "fc4":
-    case "fcprimal":
-    case "fc5":
-    case "fcnd":
-    case "fc6":
+    case "farcry-2":
+    case "farcry-3":
+    case "fc-blood-dragon":
+    case "farcry-4":
+    case "fc-primal":
+    case "farcry-5":
+    case "fc-new-dawn":
+    case "farcry-6":
       return true;
     default:
       return false;

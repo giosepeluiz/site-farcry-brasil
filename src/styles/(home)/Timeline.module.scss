@@ -1,0 +1,53 @@
+@import "../vendor/_defaults";
+
+.section {
+  background-color: $color-farcry-black;
+  width: 100vw;
+  height: fit-content;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+
+  &::before {
+    content: "";
+    background: url("/images/assets/black-border-bottom.png") repeat-x;
+    position: absolute;
+    display: block;
+    height: rem(13);
+    top: rem(-13);
+    left: 0;
+    width: 100vw;
+  }
+
+  &__wrapper {
+    padding-top: rem(80);
+    margin-bottom: rem(60);
+
+    &__title {
+      display: block;
+      font-weight: 800;
+      font-size: rem(40);
+      text-transform: uppercase;
+      padding: rem(3);
+      margin-top: rem(15);
+      color: $color-farcry-white;
+      width: 100%;
+      text-align: center;
+      padding: 0 0 rem(50) 0;
+    }
+  }
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100vw;
+    height: fit-content;
+    background-image: url("/images/assets/vertical-line.svg");
+    background-position: center;
+    background-repeat: repeat-y;
+    background-size: rem(20);
+  }
+}

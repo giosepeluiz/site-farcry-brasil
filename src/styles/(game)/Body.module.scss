@@ -1,0 +1,241 @@
+@import "../vendor/_defaults";
+
+.section {
+  &__content {
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    align-items: center;
+
+    &__navigation {
+      display: flex;
+      flex-direction: row;
+    }
+
+    &__description,
+    &__description p,
+    &__video,
+    &__features__image,
+    &__features__image img {
+      width: rem(1000);
+      max-width: rem(1000);
+
+      @include breakpoint("large-only") {
+        width: rem(900);
+        max-width: rem(900);
+      }
+
+      @include breakpoint("medium-only") {
+        width: rem(600);
+        max-width: rem(600);
+      }
+
+      @include breakpoint("small-only") {
+        width: rem(350);
+        max-width: rem(350);
+      }
+    }
+
+    &__video,
+    &__features__image,
+    &__features__image img {
+      height: rem(562.5);
+
+      @include breakpoint("large-only") {
+        height: rem(506.75);
+        max-height: rem(506.75);
+      }
+
+      @include breakpoint("medium-only") {
+        height: rem(337.83);
+        max-height: rem(337.83);
+      }
+
+      @include breakpoint("small-only") {
+        height: rem(197.74);
+        max-height: rem(197.74);
+      }
+    }
+
+    &__logo {
+      width: 100%;
+      height: rem(195);
+      max-height: rem(195);
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: contain;
+      margin: rem(90) 0 rem(30) 0;
+
+      @include breakpoint("large-only") {
+        height: rem(180);
+        max-height: rem(180);
+      }
+
+      @include breakpoint("medium-only") {
+        height: rem(150);
+        max-height: rem(150);
+      }
+
+      @include breakpoint("small-only") {
+        height: rem(130);
+        max-height: rem(130);
+      }
+    }
+
+    &__description {
+      color: $color-farcry-white;
+      font-size: rem(18);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      & p {
+        line-height: rem(30);
+      }
+
+      & h1 {
+        text-align: center;
+        text-transform: uppercase;
+        font-size: 25px;
+      }
+    }
+
+    &__release {
+      text-align: center;
+      font-size: rem(18);
+      color: $color-farcry-yellow;
+      width: 100vw;
+      max-width: 100vw;
+      margin: rem(30) 0 0 0;
+      padding: rem(5);
+      font-weight: bold;
+
+      & hr {
+        width: rem(300);
+        margin-top: rem(20);
+        margin-bottom: rem(30);
+        height: rem(0);
+      }
+    }
+
+    &__platform {
+      text-align: center;
+      font-size: rem(18);
+      color: $color-farcry-white;
+      width: 100vw;
+      max-width: 100vw;
+      margin: rem(5) 0 rem(30) 0;
+      padding: rem(5);
+    }
+    &__cover {
+      width: 100vw;
+      height: rem(700);
+      position: relative;
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+
+      @include breakpoint("medium-only") {
+        height: rem(500);
+      }
+
+      @include breakpoint("small-only") {
+        height: rem(300);
+      }
+
+      &:after {
+        content: "";
+        background: url("/images/assets/black-border-top-alt.png") repeat-x;
+        position: absolute;
+        display: block;
+        height: rem(13);
+        top: 0;
+        left: 0;
+        width: 100vw;
+      }
+    }
+
+    &__video {
+      margin-top: rem(20);
+      margin-bottom: rem(30);
+    }
+
+    &__features {
+      &__title {
+        margin-top: rem(20);
+        width: 100%;
+      }
+
+      &__image {
+        margin-top: rem(20);
+        margin-bottom: rem(30);
+      }
+
+      &__list {
+        & li {
+          line-height: rem(30);
+          margin-bottom: rem(10);
+        }
+      }
+
+      &__link {
+        text-align: center;
+
+        a,
+        a:visited,
+        a:hover {
+          color: $color-farcry-yellow;
+          text-decoration: none;
+          font-weight: bold;
+        }
+
+        a:hover {
+          text-decoration: underline;
+        }
+      }
+
+      &__spoiler {
+        line-height: rem(30);
+        margin-top: rem(10);
+        margin-bottom: rem(5);
+        background-color: $color-farcry-yellow;
+        color: $color-farcry-black;
+        padding: 10px;
+        box-sizing: border-box;
+        position: relative;
+        font-size: rem(16);
+
+        &:before {
+          content: "";
+          background: url("/images/assets/yellow-border-top.png") repeat-x;
+          position: absolute;
+          display: block;
+          height: rem(13);
+          top: 100%;
+          left: 0;
+          width: 100%;
+        }
+
+        &:after {
+          content: "";
+          background: url("/images/assets/yellow-border-bottom.png") repeat-x;
+          position: absolute;
+          display: block;
+          height: rem(13);
+          top: rem(-4);
+          left: 0;
+          width: 100%;
+        }
+
+        & strong {
+          color: #eb0000;
+        }
+
+        & svg {
+          color: #eb0000;
+          margin-bottom: rem(-10);
+        }
+      }
+    }
+  }
+}

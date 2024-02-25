@@ -1,0 +1,26 @@
+@import "../vendor/_defaults";
+
+.wrapper,
+.main {
+  height: calc(100vh - rem(140));
+  width: 100vw;
+  flex-direction: column;
+}
+
+.main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+
+  &::after {
+    content: "";
+    height: 100vh;
+    width: 100vw;
+    background-image: var(--blur-background);
+    background-size: cover;
+    filter: blur(10px);
+    position: absolute;
+    z-index: -9999;
+  }
+}

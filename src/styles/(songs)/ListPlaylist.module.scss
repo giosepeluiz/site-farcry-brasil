@@ -1,0 +1,27 @@
+@import "../vendor/_defaults";
+
+.select {
+  appearance: none;
+  background-color: $color-farcry-white;
+  background-image: url("/svg/icon-up-down.svg");
+  background-position: right;
+  background-repeat: no-repeat;
+  background-size: contain;
+  border: 1px solid $color-farcry-black;
+  border-radius: rem(5);
+  color: $color-farcry-black;
+  font-size: rem(18);
+  padding: 15px 50px 15px 15px;
+  margin: rem(10);
+
+  option:first-child {
+    font-weight: 500;
+  }
+}
+
+@include breakpoint("small-only") {
+  .select {
+    width: calc(100% - 40px);
+    max-width: calc(100% - 40px);
+  }
+}
