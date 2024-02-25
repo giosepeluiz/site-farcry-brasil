@@ -1,3 +1,5 @@
+"use client";
+
 // Importando o componente GameListSong do arquivo ListSong.tsx
 import GameListSong from "./ListSong";
 
