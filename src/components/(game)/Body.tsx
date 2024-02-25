@@ -68,7 +68,7 @@ const Body = ({ uid }: { uid: string }) => {
                     {feature.screenshot && (
                       <div className={styles.section__content__features__image}>
                         <Image
-                          src={`/../../images/screenshots/${feature.screenshot}`}
+                          src={`/images/screenshots/${feature.screenshot}`}
                           alt={feature.title ?? ""}
                           width={1000}
                           height={562.5}
