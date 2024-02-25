@@ -2,61 +2,38 @@
 // Esquema de cores do projeto
 // ==========================================================================
 
-$color-farcry: (
-  "farcry-yellow": #f9a62a,
-  "farcry-red": #ed0000,
-  "farcry-black": #1c1c1c,
-  "farcry-white": #e8e3ce,
-);
-
-:root {
-  @each $name, $color in $color-farcry {
-    --color-#{$name}: #{$color};
-  }
-}
+$color-farcry-yellow: #f9a62a;
+$color-farcry-red: #ed0000;
+$color-farcry-black: #1c1c1c;
+$color-farcry-black-transp: #1c1c1cee;
+$color-farcry-white: #e8e3ce;
 
 // ==========================================================================
 // Esquema de cores padrão
 // ==========================================================================
 
-$defaults: (
-  "success": #3cc368,
-  "warning": #f5a600,
-  "error": #ec5840,
-  "black": #000000,
-  "gray-1": #363636,
-  "gray-2": #4f4f4f,
-  "gray-3": #828282,
-  "gray-4": #bdbdbd,
-  "gray-5": #e0e0e0,
-  "gray-6": #f0f0f0,
-  "white": #fcfcfc,
-);
-
-:root {
-  @each $name, $color in $defaults {
-    --color-#{$name}: #{$color};
-  }
-}
+$color-default-sucess: #3cc368;
+$color-default-warning: #f5a600;
+$color-default-error: #ec5840;
+$color-default-black: #000000;
+$color-default-gray-1: #363636;
+$color-default-gray-2: #4f4f4f;
+$color-default-gray-3: #828282;
+$color-default-gray-4: #bdbdbd;
+$color-default-gray-5: #e0e0e0;
+$color-default-gray-6: #f0f0f0;
+$color-default-white: #fcfcfc;
 
 // ==========================================================================
 // Social Media Colors
 // ==========================================================================
 
-$social-media: (
-  "facebook": #3b5998,
-  "twitter": #00aced,
-  "linkedin": #0077b5,
-  "youtube": #cd201f,
-  "instagram": #e4405f,
-  "github": #333,
-  "telegram": #0088cc,
-  "vk": #45668e,
-  "tiktok": #69c9d0,
-);
-
-:root {
-  @each $name, $color in $social-media {
-    --color-#{$name}: #{$color};
-  }
-}
+$color-social-facebook: #3b5998;
+$color-social-twitter: #00aced;
+$color-social-linkedin: #0077b5;
+$color-social-youtube: #cd201f;
+$color-social-instagram: #e4405f;
+$color-social-github: #333;
+$color-social-telegram: #0088cc;
+$color-social-vk: #45668e;
+$color-social-tiktok: #69c9d0;

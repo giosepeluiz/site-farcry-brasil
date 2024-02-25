@@ -1,101 +1,39 @@
-# Modelo básico de Next.js 13
+# FAR CRY BRASIL (farcry.arqueirover.de)
 
-Este modelo básico inclui algumas alterações pessoais em relação ao projeto padrão de **Next.js**, dentre elas:
+## Descrição do Projeto
 
-<ul>
-  <li>Novo esquema de pastas;</li>
-  <li>Com arquivos pré-configurados;</li>
-  <li>Configurado para Typescript;</li>
-  <li>Eslint e Prettier configurados;</li>
-  <li>Toda a configuração foi feita usando Yarn;</li>
-  <li>Versão atualizada para Next.js 13.</li>
-</ul>
+Este projeto foi desenvolvido para atender às necessidades da **Comunidade Oficial de Far Cry Brasil**, com a colaboração da equipe de moderação do grupo oficial no Facebook. A principal proposta do projeto é oferecer aos fãs e jogadores uma experiência completa, fornecendo informações detalhadas sobre cada jogo da franquia Far Cry.
 
-## Esquema de Pastas
+## Objetivos Principais
 
-<br/><b>SRC:</b> esta pasta inclui todas as partes do projeto, organizados por:
+1. **Informações Detalhadas:**
 
-<ul>
-  <li>App: as páginas do projeto;</li>
-  <li>Components: arquivos de componentes;</li>
-  <li>Data: arquivos de dados em formato JSON;</li>
-  <li>Functions: funções para a parte lógica;</li>
-  <li>Models: classes utilizadas como modelos;</li>
-  <li>Styles: todos os estilos em SASS.</li>
-</ul>
+- Apresentar detalhes completos sobre cada jogo, incluindo descrição, características marcantes e data de lançamento.
 
-<br /><b>PUBLIC:</b> contem tudo aquilo que será de acesso público:
+2. **Links Importantes:**
 
-<ul>
-  <li>Icons: ícones a serem utilizados;</li>
-  <li>Images: todas as imagens;</li>
-  <li>Vectors: todos os vetores.</li>
-</ul>
+- Centralizar links relevantes para a comunidade, proporcionando fácil acesso a recursos importantes relacionados aos jogos.
 
-> Lembrando que estas pastas podem ser alteradas a vontade de acordo com a necessidade do projeto, este é só um modelo.
+3. **Trilha Sonora Oficial:**
 
-<br/>
+- Disponibilizar a trilha sonora oficial de cada jogo, permitindo que os usuários explorem e desfrutem da música que faz parte da experiência Far Cry.
 
-## Linhas do SASS/SCSS
+## Funcionalidades Principais
 
-Por padrão este projeto utiliza o pré-processador SAAS, mas para que as variáveis funcionem corretamente nos estilos dos componentes é importante que carregue a linha `@import "vendor/_defaults"`
+1. **Visualização Detalhada do Jogo:**
 
-> AVISO: O uso do SASS/SCSS torna incompatível com o novo recurso Turbopack do Next.js 13, caso queira usar o recurso, utilize CSS convencional.
+- Mostra detalhes de jogos, incluindo descrição, características e data de lançamento;
+- Os jogos estão organizados por uma linha do tempo de acordo com o lançamento.
 
-### Breakpoints
+2. **Navegação Entre Jogos:**
 
-Para definir um breakpoint carregue o comando:
+- Permite a navegação fácil entre os diferentes jogos da linha do tempo;
 
-```
-@include breakpoint('TAMANHO'){
-    // Código
-  }
-```
+3. **Trilha Sonora:**
 
-Onde:
+- Apresenta informações sobre a trilha sonora de cada jogo, incluindo links para plataformas de streaming;
+- As plataformas de streaming são: Deezer, Spotify e Youtube.
 
-<ul>
-  <li>**small-only** = < 600px</li>
-  <li>**small-up** = > 600px</li>
-  <li>**medium-only** = < 900px</li>
-  <li>**medium-up** = > 900px</li>
-  <li>**large-only** = < 1200px</li>
-  <li>**large-up** = > 1200px</li>
-</ul>
+## Sugestões de Melhorias
 
-### Z-Index
-
-Existem variáveis com z-index pré-definidos, para isso utilize, sem aspas, o padrão: `z-index: z-index(VALOR)`, onde:
-
-<ul>
-  <li>**above** = 500</li>
-  <li>**modal** = 400</li>
-  <li>**overlay** = 300</li>
-  <li>**dropdown** = 200</li>
-  <li>**default** = 1</li>
-  <li>**below** = -1</li>
-</ul>
-
-### Caminhos Absolutos (Absolute Paths)
-
-Para facilitar a importação de módulos, componentes e arquivos, o caminho é totalmente absoluto. Ao importar um arquivo dentro de `./src/...` utilize apenas `@/...`. Isso facilita principalmente quando há pastas aninhadas.
-
-### Cores Globais
-
-Também tem as variáveis de cores globais (root), onde utiliza-se `color: --color-esquema-nome`, onde a personalização deve ser feita em `@import "vendor/_colors"` que já vem com alguns modelos pré-carregados.
-
-### Converter pixels para rem
-
-O ideal é que utilize sempre REM no lugar de PIXELS para a maior parte do código, então utilize `rem(valor em px)`, pois o próprio SCSS fará a conversão. Por exemplo `rem(12)` que seria 12px será convertido para `1.33rem`.
-
-### Outras variáveis
-
-A pasta `@import "vendor/_variables"` conta com outras variáveis de medida e padrões.
-
-<br/>
-
-<br/>
-
----
-
-Última alteração em **28 de maio de 2023**.
+Todas as sugestões de melhorias são bem vindas, incluindo edições do código ou envio por e-mail para **farcry@arqueirover.de**

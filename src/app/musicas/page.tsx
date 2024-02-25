@@ -1,22 +1,18 @@
-import Footer from "@/components/Footer";
-import Header from "@/app/header";
+// Importando os estilos do módulo Home.module.scss
+import Footer from "@/components/(home)/Footer";
+import Header from "@/components/(home)/Header";
+import GameListHeader from "@/components/(songs)/ListHeader";
+import GameListSelection from "@/components/(songs)/ListSelection";
+import styles from "@/styles/(songs)/Songs.module.scss";
 
-import styles from "@/styles/Home.module.scss";
-import GameListSelection from "./components/GameListSelection";
-import GameListHeader from "./components/GameListHeader";
-
-export default function Musicas() {
+export default function Songs() {
   return (
-    <div className={styles.container}>
-      {/* Conteúdo principal */}
-
+    <div className={styles.wrapper}>
       <Header />
-
       <main className={styles.main}>
         <GameListHeader />
         <GameListSelection />
       </main>
-
       <Footer />
     </div>
   );

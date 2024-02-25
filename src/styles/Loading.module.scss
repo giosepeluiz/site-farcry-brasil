@@ -1,0 +1,42 @@
+@import "./vendor/defaults";
+
+@keyframes loading {
+  0% {
+    background-position: 0;
+  }
+  50% {
+    background-position: -16000px;
+  }
+  100% {
+    background-position: 0;
+  }
+}
+
+@keyframes active {
+  0% {
+    background-position: 0;
+  }
+  100% {
+    background-position: -23500px;
+  }
+}
+
+.wrapper {
+  height: calc(100vh - rem(190));
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.loading {
+  width: rem(250);
+  height: rem(150);
+  background-image: url("/images/assets/chorizo-sprite.png");
+  animation: loading 3s steps(64) infinite;
+
+  &:hover {
+    background-image: url("/images/assets/chorizo-active.png");
+    animation: active 3s steps(94) infinite;
+  }
+}

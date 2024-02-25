@@ -1,0 +1,79 @@
+@import "../vendor/_defaults";
+
+//*******************************
+// PÁGINA PRINCIPAL
+
+.main {
+  background: url("/images/home-bg.jpg") no-repeat center center;
+  background-size: cover;
+  height: calc(100vh - rem(83));
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  .content {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    align-self: center;
+
+    @include breakpoint("large-up") {
+      max-width: rem(1400);
+    }
+
+    &__fc6logo {
+      transform: scale(0.5);
+      margin-bottom: rem(10);
+
+      @include breakpoint("medium-only") {
+        transform: scale(0.4);
+      }
+
+      @include breakpoint("small-only") {
+        transform: scale(0.3);
+      }
+    }
+
+    &__presentation {
+      width: rem(600);
+      height: rem(228.5);
+      background: url("/svg/site-presentation.svg") no-repeat center center;
+      background-size: cover;
+      transform: scale(1.2);
+
+      @include breakpoint("medium-only") {
+        background: url("/svg/site-presentation-mobile.svg") no-repeat center center;
+        scale: 0.8;
+      }
+
+      @include breakpoint("small-only") {
+        scale: 0.5;
+      }
+    }
+  }
+  &__scroll {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    cursor: pointer;
+    position: relative;
+    bottom: rem(50);
+
+    &__arrow {
+      margin-top: rem(10);
+      transition: all 0.3s ease-in-out;
+    }
+
+    &:hover {
+      .main__scroll__arrow {
+        opacity: 0.2;
+        transition: all 0.3s ease-in-out;
+        translate: 0 rem(20);
+      }
+    }
+  }
+}

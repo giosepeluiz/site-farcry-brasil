@@ -1,51 +1,7 @@
 @import "vendor/_defaults";
 
 .container {
-  min-height: 100vh;
-  padding: 0 rem(8);
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  background-color: $color-farcry-yellow;
   height: 100vh;
-}
-
-.main {
-  height: 100%;
   width: 100vw;
-  background-image: url("../../public/images/home-bg.jpg");
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-
 }
-
-.logo {
-  height: rem(90);
-  width: rem(371);
-  margin-bottom: rem(60);
-}
-
-@include breakpoint("small-only") {
-  .logo {
-    zoom: 0.7;
-  }
-
-  
-}
-
-.error{
-    font-family: $global-font-title;
-    display: block;
-    text-align: center;
-    text-transform: uppercase;
-    color: var(--color-farcry-yellow);
-    font-weight: 500;
-    font-size: rem(20);
-    text-shadow: 1px 1px 1px var(--color-farcry-black);
-    font-size: rem(50);
-  }
