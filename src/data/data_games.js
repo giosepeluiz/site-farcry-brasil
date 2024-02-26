@@ -7,6 +7,8 @@ export const gamelist = [
     cover: "fc1",
     platform: "PC",
     hasSongs: false,
+    description: `
+    Far Cry é um jogo de tiro em primeira pessoa para PC com elementos de terror, desenvolvido pelo estúdio alemão Crytek GmbH e publicado pela Ubisoft em 23 de março de 2004, para Windows. O Far Cry vendeu 730.000 unidades em quatro meses após o lançamento. A história do jogo segue Jack Carver, ex-agente das Forças Especiais e capitão de barco particular, lutando para sobreviver em um paraíso tropical transformado em inferno.`,
     features: [
       { video: "trailer-fc1" },
       {

@@ -36,11 +36,17 @@ const Body = ({ uid }: { uid: string }) => {
 
             {/* Navegação entre jogos */}
             <div className={styles.section__content__navigation}>
-              {item?.id && gamelist[item.id - 1] && (
-                <Navigation type={-1} list={gamelist} id={item?.id - 1} />
+              {/* Caso o ID do jogo seja 0, renderiza a navegação para frente */}
+              {item.id === 0 && <Navigation type={1} list={gamelist} id={1} />}
+
+              {/* Caso o ID do jogo seja diferente de 0, renderiza a navegação para trás */}
+              {item.id !== 0 && item?.id && gamelist[item.id - 1] && (
+                <Navigation type={-1} list={gamelist} id={item.id - 1} />
               )}
-              {item?.id && gamelist[item.id + 1] && (
-                <Navigation type={1} list={gamelist} id={item?.id + 1} />
+
+              {/* Caso o ID do jogo seja diferente de 0, renderiza a navegação para frente */}
+              {item.id !== 0 && item?.id && gamelist[item.id + 1] && (
+                <Navigation type={1} list={gamelist} id={item.id + 1} />
               )}
             </div>
 
