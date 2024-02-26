@@ -18,11 +18,11 @@ const GameListHeader = (props: GameListHeader) => {
   // Filtra o jogo selecionado com base no SLUG
   const selectedGame = gamelist.filter((item) => item.uid === game);
 
-  // Define o background borado (blur) com a imagem do jogo selecionado
+  // Define o background borrado (blur) com a imagem do jogo selecionado
   selectedGame[0] &&
     document.documentElement.style.setProperty(
       "--blur-background",
-      `url(/images/assets/screens/bg-${selectedGame[0].cover}.jpg)`,
+      `url(/images/assets/landscapes/bg-${selectedGame[0].cover}.jpg)`,
     );
 
   return (
