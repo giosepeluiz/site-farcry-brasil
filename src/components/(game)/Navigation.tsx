@@ -14,7 +14,7 @@ import Link from "next/link";
 const Navigation = ({ type, list, id }: { type: number; list: GameProps[]; id: number }) => {
   return (
     <>
-      {type === -1 && (
+      {type && type === -1 && (
         // Se type for -1, renderiza a navegação para trás
         <div className={styles.navigation}>
           {/* Link para o jogo anterior */}
@@ -27,7 +27,7 @@ const Navigation = ({ type, list, id }: { type: number; list: GameProps[]; id: n
         </div>
       )}
 
-      {type === 1 && (
+      {type && type === 1 && (
         // Se type for 1, renderiza a navegação para frente
         <div className={styles.navigation}>
           {/* Link para o próximo jogo */}
