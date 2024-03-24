@@ -1,5 +1,16 @@
 @import "../vendor/_defaults";
 
+@keyframes media {
+  from {
+    opacity: 0;
+    filter: blur(50px);
+  }
+  to {
+    opacity: 1;
+    filter: blur(0);
+  }
+}
+
 .section {
   &__content {
     display: flex;
@@ -40,6 +51,9 @@
     &__features__image,
     &__features__image img {
       height: rem(562.5);
+      animation: media 1ms ease-in-out;
+      animation-timeline: view();
+      animation-range: cover 0 cover 30%;
 
       @include breakpoint("large-only") {
         height: rem(506.75);

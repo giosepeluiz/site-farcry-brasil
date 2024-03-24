@@ -15,7 +15,7 @@ import { gamelist } from "@/data/data_games";
 const SectionGames = () => {
   return (
     // Elemento de seção com a classe definida nos estilos
-    <section className={styles.section}>
+    <section className={styles.section} id="timeline">
       {/* Contêiner da seção */}
       <div className={styles.section__wrapper}>
         {/* Título da seção */}

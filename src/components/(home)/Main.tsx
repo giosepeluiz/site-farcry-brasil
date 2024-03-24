@@ -27,22 +27,26 @@ const Main = () => {
       {/* Indicador de rolar para baixo */}
       <div className={styles.main__scroll}>
         {/* Ícone de mouse */}
-        <Image
-          src={"/svg/icon-mouse.svg"}
-          width={30}
-          height={48}
-          alt="Role para baixo"
-          className={styles.main__scroll__icon}
-        />
+        <a href="#timeline">
+          <Image
+            src={"/svg/icon-mouse.svg"}
+            width={30}
+            height={48}
+            alt="Role para baixo"
+            className={styles.main__scroll__icon}
+          />
+        </a>
 
         {/* Setinha para baixo */}
-        <Image
-          src={"/svg/icon-arrowdown.svg"}
-          width={30}
-          height={15.12}
-          alt="Role para baixo"
-          className={styles.main__scroll__arrow}
-        />
+        <a href="#timeline">
+          <Image
+            src={"/svg/icon-arrowdown.svg"}
+            width={30}
+            height={15.12}
+            alt="Role para baixo"
+            className={styles.main__scroll__arrow}
+          />
+        </a>
       </div>
     </main>
   );
